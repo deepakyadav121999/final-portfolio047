@@ -1,4 +1,6 @@
 import { useState,useEffect } from "react"
+import { Link } from "react-scroll";
+import project3 from './project3.png'
 
 
 export default function MyPortfolio() {
@@ -8,14 +10,21 @@ export default function MyPortfolio() {
     "src": "https://user-images.githubusercontent.com/91047001/166081897-13eaa3a4-8a93-4795-8ae0-a92d834e6f7f.JPG",
     "title": "Meesho Clone",
     "description": "Developed a user-friendly e-commerce website with a range of features, including search functionality, wishlist creation, filtering options, and a seamless shopping cart system",
-    "link": "View In Github"
+    "link": "https://github.com/deepakyadav121999/justtry"
   },
   {
     "id": "2",
     "src": "https://camo.githubusercontent.com/82b0c7ce6a92cb25cf69a1a8af7ba323a5767a1b1e088d56344beba4a84d7488/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6a73746c6f79616c74792f696d6167652f75706c6f61642f76313630393632303938372f6d79506f7274666f6c696f2f68626339377032337032636a733832396c7363772e706e67",
     "title": "Linkedin Clone",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-    "link": "View In Github"
+    "link": "https://github.com/deepakyadav121999/linkedin-clone-final"
+  },
+  {
+    "id": "3",
+    "src": `${project3}`,
+    "title": "To do App",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+    "link": "https://github.com/deepakyadav121999/to-do-app"
   }
 ]
   return (
@@ -56,8 +65,8 @@ export default function MyPortfolio() {
                 <h3 className="portfolio--section--title">{item.title}</h3>
                 <p className="text-md">{item.description}</p>
               </div>
-              <p className="text-sm portfolio--link">
-                {item.link}
+             <a href={item.link} target="_blank" style={{textDecoration:"none"}}> <p className="text-sm portfolio--link" >
+               Go To Github
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -73,7 +82,7 @@ export default function MyPortfolio() {
                     stroke-linejoin="round"
                   />
                 </svg>
-              </p>
+              </p></a>
             </div>
           </div>
         ))}

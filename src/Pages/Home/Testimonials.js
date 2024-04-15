@@ -1,16 +1,32 @@
 import { useState,useEffect } from "react"
 
 export default function Testimonial() {
-  const[testimonial,settestimonial] =useState()
-  let api =async()=>{
-    let dta = await fetch("https://filthy-cyan-button.cyclic.app/testimonial")
-    let data = await dta.json()
-    settestimonial(data)
-  
-  }
-  useEffect(()=>{
-    api()
-  },[])
+  const testimonial = [
+    {
+      "id": "1",
+      "count": "5",
+      "src": "./img/avatar-image.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Dianne Russel",
+      "author_designation": "Starbucks"
+    },
+    {
+      "id": "2",
+      "count": "5",
+      "src": "./img/avatar-image-1.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Kristin Watson",
+      "author_designation": "Louis Vuitton"
+    },
+    {
+      "id": "3",
+      "count": "5",
+      "src": "./img/avatar-image-2.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Kathryn Murphy",
+      "author_designation": "McDonald's"
+    }
+  ]
   return (
     <section className="testimonial--section" id="testimonial">
       <div className="portfolio--container-box">

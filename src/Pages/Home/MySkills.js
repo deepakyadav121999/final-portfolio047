@@ -2,16 +2,33 @@ import { useState,useEffect } from "react";
 
 
 export default function MySkills() {
-  let [skills,setskills] = useState();
-  let api =async()=>{
-    let dta = await fetch("https://filthy-cyan-button.cyclic.app/skills")
-    let data = await dta.json()
-    setskills(data)
-  
-  }
-  useEffect(()=>{
-    api()
-  },[])
+  let skills =[
+    {
+      "id": "1",
+      "src": "./img/product-chain-1.png",
+      "title": "Front-End",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+    },
+    {
+      "id": "2",
+      "src": "./img/tag-1.png",
+      "title": "Back-End",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+    },
+    {
+      "id": "3",
+      "src": "./img/feather-pen-2.png",
+      "title": "UI & UX Design",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+    },
+    {
+      "id": "4",
+      "src": "./img/feather-pen-1.png",
+      "title": "Problem Solving",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+    }
+  ]
+ 
   return (
     <section className="skills--section" id="mySkills">
       <div className="portfolio--container">

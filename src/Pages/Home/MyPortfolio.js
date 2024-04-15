@@ -16,14 +16,14 @@ export default function MyPortfolio() {
     "id": "2",
     "src": "https://camo.githubusercontent.com/82b0c7ce6a92cb25cf69a1a8af7ba323a5767a1b1e088d56344beba4a84d7488/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6a73746c6f79616c74792f696d6167652f75706c6f61642f76313630393632303938372f6d79506f7274666f6c696f2f68626339377032337032636a733832396c7363772e706e67",
     "title": "Linkedin Clone",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+    "description": "Developed a dynamic web application using React.js that allows users to create, share, and manage personalized lists of favorite links. The project aimed to provide a user-friendly interface for organizing and accessing online resources efficiently.",
     "link": "https://github.com/deepakyadav121999/linkedin-clone-final"
   },
   {
     "id": "3",
     "src": `${project3}`,
     "title": "To do App",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+    "description": "Designed and developed a to-do list web application using React.js, aimed at helping users organize tasks and manage their daily activities efficiently. The project focused on delivering a simple yet intuitive user experience for task management.",
     "link": "https://github.com/deepakyadav121999/to-do-app"
   }
 ]

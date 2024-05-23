@@ -190,7 +190,7 @@ h2 {
   justify-content: space-between;
   gap: 32px;
   background-color: var(--bg-shade);
-  min-width: 200px;
+ 
 }
 .hero--section--content-box {
   display: flex;

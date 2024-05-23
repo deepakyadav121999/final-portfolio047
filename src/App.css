@@ -190,6 +190,7 @@ h2 {
   justify-content: space-between;
   gap: 32px;
   background-color: var(--bg-shade);
+  min-width: 200px;
 }
 .hero--section--content-box {
   display: flex;
@@ -306,7 +307,7 @@ h2 {
   padding: 133.3px 85.3px;
   align-items: center;
   gap: 114.6px;
-  grid-template-columns: repeat(2, 1fr);
+ 
 }
 .about--section--img > img {
   width: 100%;
